@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | Helio Journal</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="theme-light">
+
+<header class="site-header container">
+  <h1 class="site-title"><a href="{{ '/' | relative_url }}">HJ</a></h1>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
+
+<main class="container">
+  {{ content }}
+</main>
+
+<footer class="site-footer container">
+  <p>© 2025 Helio Hashinaga — <a href="https://github.com/heliohashinaga/helio-journal">GitHub</a></p>
+</footer>
+
+<script>
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('theme-dark');
+  document.body.classList.toggle('theme-light');
+});
+</script>
+
+</body>
+</html>
