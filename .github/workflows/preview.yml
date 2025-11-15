@@ -1,0 +1,21 @@
+name: Jekyll Build (PR Preview)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - name: Install Bundler and Jekyll
+        run: |
+          gem install bundler
+          bundler install || true
+      - name: Build site
+        run: bundle exec jekyll build
