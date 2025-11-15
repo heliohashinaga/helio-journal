@@ -1,6 +1,6 @@
 title: " Helio Journal"
-email: ""
-description: "Journal by Helio Hashinaga - dev notes, insights, reflections."
+author: "Helio Higuchi Hashinaga"
+description: "Journal by Helio Higuchi Hashinaga - dev notes, insights, reflections."
 baseurl: "/helio-journal"
 url: "https://heliohashinaga.github.io"
 theme: minima
