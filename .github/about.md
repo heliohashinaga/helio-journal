@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
-This is a journal for personal notes, micro-learnings and reflections.
-Customize `_config.yml`, add posts under `_posts/`, and GitHub Pages will publish the site.
+
+I'm Helio - a Brazilian software developer.
