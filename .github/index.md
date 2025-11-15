@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Journal Template
+title:  Helio Journal
 ---
-Welcome to this journal.
-Write entries in `_posts/` using `YYYY-MM-DD-title.md` format. 
+Welcome - this is my personal journal.
