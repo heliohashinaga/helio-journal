@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-pemalink: /about/
+pemalink: /about
 ---
 
 I'm Helio - I'm just someone who enjoys learning new things and exploring ideas.
