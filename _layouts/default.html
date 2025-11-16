@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} | Helio Journal</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-    <!-- Pre-load theme saved to avoid flash -->
-    <script>
-        (function() {
-            const saved = localStorage.getItem('theme');
-
-            if (saved) {
-                document.documentElement.setAttribute("data-theme", saved);
-            }
-        })();
-    </script>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | Helio Journal</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body>
-    {% include header.html %}
+<script src="/assets/js/theme.js" />
+<body class="theme-light">
 
-    <main class="container">
-        {{ content }}
-    </main>
+<header class="site-header container">
+  <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
 
-    {% include footer.html %}
+<main class="container">
+  {{ content }}
+</main>
 
-    <script src="{{ '/assets/js/theme.js' | relative_url }}" />
+<footer class="site-footer container">
+  <p>© {{ site.time | date: "%Y" }} {{ site.author }} — <a href="https://github.com/heliohashinaga/helio-journal">GitHub</a></p>
+</footer>
+
+<script>
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('theme-dark');
+  document.body.classList.toggle('theme-light');
+});
+</script>
 
 </body>
-
 </html>
