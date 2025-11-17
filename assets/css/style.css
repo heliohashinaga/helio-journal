@@ -1,5 +1,5 @@
 /* -------------------------------------------------------
-   1. ROOT VARIABLES
+  ROOT VARIABLES
 ------------------------------------------------------- */
 :root {
   /* Light theme */
@@ -18,7 +18,7 @@
 }
 
 /* -------------------------------------------------------
-   2. THEME RULES
+  THEME RULES
 ------------------------------------------------------- */
 html.theme-light {
   background-color: var(--bg-light);
@@ -49,7 +49,7 @@ html.theme-dark footer {
 }
 
 /* -------------------------------------------------------
-   3. BASE
+  BASE
 ------------------------------------------------------- */
 body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -73,7 +73,7 @@ a:hover {
 }
 
 /* -------------------------------------------------------
-   4. HEADER / FOOTER
+  HEADER / FOOTER
 ------------------------------------------------------- */
 header.site-header,
 footer.site-footer {
@@ -108,7 +108,7 @@ footer.site-footer {
 }
 
 /* -------------------------------------------------------
-   5. HOME PAGE
+  HOME PAGE
 ------------------------------------------------------- */
 
 /* Home Header */
@@ -135,7 +135,7 @@ footer.site-footer {
 }
 
 /* -------------------------------------------------------
-   6. POST CARDS
+  POST CARDS
 ------------------------------------------------------- */
 
 .post-card {
@@ -189,4 +189,40 @@ html.theme-dark .post-card {
 
 html.theme-dark .tag {
   background: var(--primary-dark);
+}
+
+/* -------------------------------------------------------
+  TAGS PAGE (INDEX)
+------------------------------------------------------- */
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tag-box {
+  padding: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(0,0,0,0.03);
+  transition: .15s ease;
+  font-size: 0.95rem;
+}
+
+html.theme-dark .tag-box {
+  background: rgba(255,255,255,0.05);
+  border-color: var(--border-dark);
+}
+
+.tag-box:hover {
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.tag-box small {
+  display: block;
+  opacity: .7;
+  margin-top: .3rem;
 }
