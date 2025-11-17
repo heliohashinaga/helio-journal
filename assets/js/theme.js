@@ -1,13 +1,4 @@
-// Aplica o tema salvo imediatamente
-(function () {
-    const saved = localStorage.getItem("theme");
-    const theme = saved ? saved : "theme-light";
-  
-    const root = document.documentElement;
-    root.classList.remove("theme-light", "theme-dark");
-    root.classList.add(theme);
-  })();
-  
+ 
   // Função para alternar tema
   function toggleTheme() {
     const isDark = document.body.classList.contains("theme-dark");
