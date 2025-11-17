@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Helio Journal
-icon: 📓
+icon: "📓"
 subtitle: "Welcome - this is my personal journal. Place for my dev notes, insights and reflections."
 ---
 

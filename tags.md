@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tags
-icon: 🏷️
+icon: "🏷️"
 subtitle: "Browser all topics."
 permalink: /tags
 ---
