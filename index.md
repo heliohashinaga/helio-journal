@@ -1,14 +1,12 @@
 ---
 layout: default
 title: Helio Journal
-icon: "📓"
-subtitle: "Welcome - this is my personal journal. Place for my dev notes, insights and reflections."
 ---
 
 {% include page-header.html 
     title="Helio Journal" 
-    icon="{{ page.icon }}"
-    subtitle="{{ page.subtitle }}"
+    icon="📓"
+    subtitle="Welcome - this is my personal journal. Place for my dev notes, insights and reflections."
  %}
 
 <section class="post-list">

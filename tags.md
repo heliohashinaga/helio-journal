@@ -1,15 +1,13 @@
 ---
 layout: default
 title: Tags
-icon: "🏷️"
-subtitle: "Browser all topics."
 permalink: /tags
 ---
 
 {% include page-header.html 
-  title="{{ page.title }}" 
-  icon="{{ page.icon }}"
-  subtitle="{{ page.subtitle }}"
+  title="Tags" 
+  icon="🏷️"
+  subtitle="Browser all topics."
 %}
 
 <div class="tag-grid">
