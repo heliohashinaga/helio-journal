@@ -251,3 +251,23 @@ html.theme-dark .tag-box {
   opacity: .7;
   margin-top: .3rem;
 }
+
+/* -------------------------------------------------------
+  TAG TOPIC
+------------------------------------------------------- */
+
+/* Tag Topic Header */
+.tag-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.tag-title {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
