@@ -1,11 +1,13 @@
  
   // Alter theme
   function toggleTheme() {
-    const isDark = document.body.classList.contains("theme-dark");
+    const root = document.documentElement;
+
+    const isDark = root.classList.contains("theme-dark");
     const next = isDark ? "theme-light" : "theme-dark";
-  
-    document.body.classList.remove("theme-light", "theme-dark");
-    document.body.classList.add(next);
+
+    root.classList.remove("theme-light", "theme-dark");
+    root.classList.add(next);
     localStorage.setItem("theme", next);
   }
   
