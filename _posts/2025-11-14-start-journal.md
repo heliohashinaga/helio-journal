@@ -1,6 +1,6 @@
 ---
 title: "Starting journal"
-tags: [intro]
+tags: [journal-project]
 ---
 
 Creating journal.

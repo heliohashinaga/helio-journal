@@ -1,6 +1,6 @@
 ---
 title: "Journal with Light and Dark Theme"
-tags: [css]
+tags: [journal-project]
 ---
 
 Adding theme light and dark in Journal Project.
