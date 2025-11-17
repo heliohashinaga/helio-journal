@@ -1,6 +1,36 @@
 ---
-layout: home
+layout: default
 title: Helio Journal
 icon: 📓
 subtitle: "Welcome - this is my personal journal. Place for my dev notes, insights and reflections."
 ---
+
+{% include page-header.html 
+    title="Helio Journal" 
+    icon="{{ page.icon }}"
+    subtitle="{{ page.subtitle }}"
+ %}
+
+<section class="post-list">
+  {% for post in site.posts %}
+  <article class="post-card">
+    <h2 class="post-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+
+    <div class="post-meta">
+      <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
+
+      {% if post.tags %}
+      <span class="post-tags">
+        {% for tag in post.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </span>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>

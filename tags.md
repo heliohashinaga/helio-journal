@@ -5,3 +5,19 @@ icon: 🏷️
 subtitle: "Browser all topics."
 permalink: /tags
 ---
+
+{% include page-header.html 
+  title="{{ page.title }}" 
+  icon="{{ page.icon }}"
+  subtitle="{{ page.subtitle }}"
+%}
+
+<div class="tag-grid">
+   {% assign sorted_tags = site.tags | sort %}
+   {% for tag in sorted_tags %}
+     <a class="tag-box" href="/tag/{{ tag[0] }}/">
+       <span>{{ tag[0] }}</span>
+       <small>{{ tag[1].size }} posts</small>
+     </a>
+   {% endfor %}
+</div>
