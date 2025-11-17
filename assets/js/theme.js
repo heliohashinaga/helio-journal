@@ -3,8 +3,9 @@
     const saved = localStorage.getItem("theme");
     const theme = saved ? saved : "theme-light";
   
-    document.body.classList.remove("theme-light", "theme-dark");
-    document.body.classList.add(theme);
+    const root = document.documentElement;
+    root.classList.remove("theme-light", "theme-dark");
+    root.classList.add(theme);
   })();
   
   // Função para alternar tema
