@@ -5,8 +5,8 @@ permalink: /tags
 ---
 
 <div class="container">
-  <h1 class="home-title">📚 Todas as Tags</h1>
-  <p class="home-subtitle">Explore todos os assuntos do journal</p>
+  <h1 class="home-title">📚 Tags</h1>
+  <p class="home-subtitle">Explore the journal subjects</p>
 
   <div class="tag-grid">
     {% assign sorted_tags = site.tags | sort %}
