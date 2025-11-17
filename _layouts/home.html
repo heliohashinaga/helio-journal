@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% include page-header.html 
+    title="Helio Journal" 
+    icon="{{ page.icon }}"
+    subtitle="{{ content }}"
+ %}
+
 <section class="post-list">
   {% for post in site.posts %}
   <article class="post-card">

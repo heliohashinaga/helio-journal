@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Tags
+icon: "🏷️"
 permalink: /tags
 ---
 

@@ -1,10 +1,7 @@
 ---
 layout: home
 title: Helio Journal
+icon: 📓
 ---
 
-{% include page-header.html 
-   title="Helio Journal" 
-   icon="📓"
-   subtitle="Welcome - this is my personal journal. Place for my dev notes, insights and reflections."
-%}
+Welcome - this is my personal journal. Place for my dev notes, insights and reflections.
