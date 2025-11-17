@@ -1,0 +1,12 @@
+<div class="page-header">
+    <h1 class="page-title">
+      {% if include.icon %}
+        <span class="page-icon">{{ include.icon }}</span>
+      {% endif %}
+      {{ include.title }}
+    </h1>
+  
+    {% if include.subtitle %}
+      <p class="page-subtitle">{{ include.subtitle }}</p>
+    {% endif %}
+  </div>

@@ -4,11 +4,13 @@ title: Tags
 permalink: /tags
 ---
 
-<div class="container">
-  <h1 class="home-title">📚 Tags</h1>
-  <p class="home-subtitle">Explore the journal subjects</p>
+{% include page-header.html 
+   title="Tags" 
+   icon="🏷️"
+   subtitle="Explore posts by subject."
+%}
 
-  <div class="tag-grid">
+<div class="tag-grid">
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
       <a class="tag-box" href="/tag/{{ tag[0] }}/">
@@ -16,5 +18,4 @@ permalink: /tags
         <small>{{ tag[1].size }} posts</small>
       </a>
     {% endfor %}
-  </div>
 </div>
