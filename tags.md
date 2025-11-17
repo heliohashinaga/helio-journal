@@ -7,7 +7,7 @@ permalink: /tags
 {% include page-header.html 
    title="Tags" 
    icon="🏷️"
-   subtitle="Explore posts by subject."
+   subtitle="Browser all topics."
 %}
 
 <div class="tag-grid">
