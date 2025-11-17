@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: default
 title: About Me
 pemalink: /about
 ---
 
 {% include page-header.html 
    title="About Me" 
-   icon="👨"
+   icon="😃"
    subtitle="Who I am."
 %}
 
