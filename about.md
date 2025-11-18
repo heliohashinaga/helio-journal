@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Me
-pemalink: /about/
+permalink: /about/
 ---
 
 {% include page-header.html 
