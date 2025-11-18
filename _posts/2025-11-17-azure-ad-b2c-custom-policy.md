@@ -1,6 +1,6 @@
 ---
 title: "Azure AD B2C Custom Policy"
-tags: [ad, azure, azure-ad-b2c]
+tags: [azure, azure-ad-b2c]
 ---
 
 Implemented Custom Policies in Azure AD B2C.
